@@ -4,15 +4,17 @@
 
 **[Agnes Harness](https://github.com/AgnesAI-Labs/agnes-harness)** · Contributor
 
-面向实际工作流的可插拔 Agent 框架，支持工具、Skills 和插件扩展。
+面向业务部署的开源 Agent 运行框架，把模型、业务系统和工作台接入同一套运行环境。
 
-[![Agnes Harness 仓库 Star 数](https://img.shields.io/github/stars/AgnesAI-Labs/agnes-harness?style=flat-square&color=6D56A2&label=stars)](https://github.com/AgnesAI-Labs/agnes-harness/stargazers) · [我的已合并 PR](https://github.com/AgnesAI-Labs/agnes-harness/pulls?q=is%3Apr+is%3Amerged+author%3AADC9277)
+[![Agnes Harness 仓库 Star 数](https://img.shields.io/github/stars/AgnesAI-Labs/agnes-harness?style=flat-square&color=6D56A2&label=stars)](https://github.com/AgnesAI-Labs/agnes-harness/stargazers)
 
-## Agent 工程笔记
+## Agnes Harness 的亮点
 
-- **从执行轨迹追到具体调用。** 按轮次和工具组织时间线，按需展开调用的输入和输出。 [PR #6](https://github.com/AgnesAI-Labs/agnes-harness/pull/6)
-- **让审批对应实际的写操作。** 在检测重复写入时区分只读轮询和会改变状态的调用。 [PR #43](https://github.com/AgnesAI-Labs/agnes-harness/pull/43)
-- **编辑文件时保留原有编码标记。** 保留文件原有的 UTF-8 BOM，覆盖空文件时也准确报告写入结果。 [PR #63](https://github.com/AgnesAI-Labs/agnes-harness/pull/63)
+- **业务能力可以打包复用。** 把工具、模型适配器、Skills 和业务面板打包成插件，按不同场景组合。
+- **执行可追踪，任务可恢复。** 在 Trace 里查看工具调用与结果，关键操作可配置审批，任务中断后可从保存的状态恢复。
+- **插件可升级，会话可延续。** 新会话可以使用新版插件，已有会话继续使用原先绑定的后端插件版本。
+
+[快速开始](https://github.com/AgnesAI-Labs/agnes-harness/blob/main/docs/guide/quickstart.md) · [架构设计](https://github.com/AgnesAI-Labs/agnes-harness/blob/main/docs/develop/architecture.md) · [案例演示](https://github.com/AgnesAI-Labs/agnes-harness/blob/main/docs/guide/demo.md)
 
 <details>
 <summary>更多项目与实验</summary>
